@@ -1,0 +1,17 @@
+@import b3.vertical.fieldConstructor
+
+@(currentUserOpt: Option[User])(implicit messages: Messages, request: RequestHeader)
+
+@main("login", currentUserOpt){
+
+    <div class="row">
+        <div class="col-xs-offset-3 col-xs-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="@routes.LoginController.authorize()">ログイン</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
